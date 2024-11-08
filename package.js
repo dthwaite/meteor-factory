@@ -6,8 +6,8 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom("1.2");
-  api.use(["ecmascript", "minimongo@2.0.0", "underscore", "ejson", "random"]);
+  api.versionsFrom(['2.3', '3.0']);
+  api.use(["ecmascript", "minimongo@1.0.9 || 2.0.0", "underscore", "ejson", "random"]);
   api.addFiles("factory.js");
   api.export("Factory");
 });
